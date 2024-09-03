@@ -1,0 +1,5 @@
+pyLoRa
+rpi-lgpio
+spidev
+flask
+paho-mqtt

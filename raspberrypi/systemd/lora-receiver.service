@@ -1,0 +1,13 @@
+[Unit]
+Description=Server for cistern LoRa node
+After=network.target
+
+[Service]
+Type=simple
+User=pi
+ExecStart=/usr/bin/sh /home/pi/LoRa-Cistern-Node/raspberrypi/setup.sh start
+WorkingDirectory=/home/pi/LoRa-Cistern-Node/raspberrypi
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
