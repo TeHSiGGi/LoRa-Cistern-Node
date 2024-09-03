@@ -101,7 +101,7 @@ def start_flask():
 
 if __name__ == '__main__':
     # Create LoRa object
-    lora = LoRaRcvCont(verbose=False, mqtt_enabled=True)
+    lora = LoRaRcvCont(verbose=False, mqtt_enabled=False)
     lora.set_pa_config(pa_select=1)
     lora.set_rx_crc(True)
     lora.set_freq(433.0)
